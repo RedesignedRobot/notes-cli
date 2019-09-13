@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RedesignedRobot/notes-cli#readme",
   "dependencies": {
+    "chalk": "2.4.2",
     "mongoose": "5.7.0"
   }
 }
