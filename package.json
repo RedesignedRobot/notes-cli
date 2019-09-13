@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/RedesignedRobot/notes-cli#readme",
   "dependencies": {
-    "mongoose": "^5.7.0"
+    "mongoose": "5.7.0"
   }
 }
