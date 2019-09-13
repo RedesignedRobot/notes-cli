@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RedesignedRobot/notes-cli/issues"
   },
-  "homepage": "https://github.com/RedesignedRobot/notes-cli#readme"
+  "homepage": "https://github.com/RedesignedRobot/notes-cli#readme",
+  "dependencies": {
+    "mongoose": "^5.7.0"
+  }
 }
