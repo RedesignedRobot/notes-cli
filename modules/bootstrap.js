@@ -1,15 +1,17 @@
 const ui = require("./ui");
+const director = require("./director");
 
 const readline = require("readline-sync");
 
 function launch() {
-  ui.showMenu();
+  ui.mainMenu();
   var choice = readline.question("");
-  if (choice > 0 && choice < 6) {
+  if (choice > 0 && choice < 5) {
     return choice;
+  } else if (choice == 5) {
+    director.cleanClose();
   } else {
-    ui.err("Please select a valid choice 1..5");
-    process.exit(0);
+    director.dirtyClose("Please select a valid choice 1..5");
   }
 }
 

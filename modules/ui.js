@@ -8,6 +8,10 @@ function err(text) {
   console.log("\n" + c.bgRed.bold("Error:") + c.inverse(" " + text + " \n"));
 }
 
+function err(label, text) {
+  console.log("\n" + c.bgRed.bold(label + ":") + c.inverse(" " + text + " \n"));
+}
+
 function warn(text) {
   console.log("\n" + c.bgRed.bold("Warning:") + c.inverse(" " + text + " \n"));
 }
@@ -15,7 +19,7 @@ function warn(text) {
 function print(text) {
   console.log(c.yellow.bold(String(text)));
 }
-function showMenu() {
+function mainMenu() {
   nl();
   console.log(c.cyan("Welcome! Please select and option."));
   console.log(c.green("1) Create a new note."));
@@ -27,7 +31,7 @@ function showMenu() {
 }
 
 module.exports = {
-  showMenu,
+  mainMenu,
   err,
   warn,
   print

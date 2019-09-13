@@ -1,5 +1,5 @@
 const bootstrap = require("./modules/bootstrap");
-const ui = require("./modules/ui");
+const navigator = require("./modules/navigator");
 
-var c = bootstrap.launch();
-ui.print(c);
+var choice = bootstrap.launch();
+navigator.navigate(parseInt(choice));
