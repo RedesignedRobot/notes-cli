@@ -18,10 +18,10 @@ function navigate(choice) {
       };
       var noteJSON = JSON.stringify(note);
       db.insertNote(noteJSON);
-    //   db.verifyNote("a");
     }
   } else if (choice === 2) {
   } else if (choice === 3) {
+    db.getAllNotes();
   } else if (choice === 4) {
   }
 }

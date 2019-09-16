@@ -24,13 +24,20 @@ function insertNote(noteJSON) {
   });
 }
 
-// function verifyNote(id) {
-//   var blackbox = noteTemplate.noteModel;
-//   blackbox.findOne({ title: "t1" }, function(err, note) {
-//     console.log(note);
-//   });
+function getAllNotes() {
+  m.connect(dbURL, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true
+  });
+  var Notes = noteTemplate.noteModel;
+  Notes.find({}, function(err, note) {
+    console.log(note);
+  });
+  m.connection.close()
 }
+
 module.exports = {
   insertNote,
-  verifyNote
+  getAllNotes
 };
